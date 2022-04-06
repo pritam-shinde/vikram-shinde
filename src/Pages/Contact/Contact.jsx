@@ -2,7 +2,6 @@ import { Container, Box, Grid, Divider, List, ListItem, ListItemIcon, Link, Typo
 import { LocalPhone, PinDrop, Mail, LinkedIn, Twitter, Instagram, Facebook, } from '@material-ui/icons';
 import { BsSkype } from 'react-icons/bs';
 import { FaQuora } from 'react-icons/fa'
-import Helmet from 'react-helmet';
 import './Sass/Contact.css';
 import Data from './Data/Data';
 
@@ -11,20 +10,6 @@ const Contact = () => {
 
   return (
     <>
-     <Helmet>
-        <title>Contact Me - Vikram Shinde, Internet Marketing</title>
-        <meta name="description" content="You can get in touch with me using the form below. Or you can drop me a message on any social networks" />
-        <link rel="canonical" href="/contact" />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content="Contact Me - Vikram Shinde, Internet Marketing" />
-        <meta property="og:description" content="You can get in touch with me using the form below. Or you can drop me a message on any social networks" />
-        <meta property="og:url" content="/contact" />
-        <meta property="article:modified_time" content="2022-04-02T05:43:30+00:00" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:label1" content="Est. reading time" />
-        <meta name="twitter:data1" content="3 minutes" />
-      </Helmet>
       <main>
         <Container maxWidth="xl" id="contact">
           <Box mt={15}>
