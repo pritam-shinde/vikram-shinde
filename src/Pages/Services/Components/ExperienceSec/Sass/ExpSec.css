@@ -1,0 +1,23 @@
+#expSec {
+  width: 100%;
+  background-image: url("../../../../../Assets/Image/Background/expSec.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#expSec #list {
+  background-color: #161A23;
+  padding: 1.5rem;
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+  position: relative;
+  top: -3rem;
+}
+
+#expSec #list .MuiList-root .MuiListItem-root.MuiListItem-gutters {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+/*# sourceMappingURL=ExpSec.css.map */

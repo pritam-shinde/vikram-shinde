@@ -1,0 +1,17 @@
+#portfolio-page{
+
+    h1{
+        font-size: 3rem !important;
+    }
+
+    h2{
+        font-size: 2.5rem !important;
+        color: #00ccff;
+
+        @media only screen and(max-width: 576px){
+            &{
+                font-size: 2rem !important;
+            }
+        }
+    }
+}

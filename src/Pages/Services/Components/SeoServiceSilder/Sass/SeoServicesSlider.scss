@@ -1,0 +1,38 @@
+#seoServiceSlider{
+    height: auto;
+    width: 100%;
+    background-image: url("../../../../../Assets/Image/Background/bull.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media only screen and (max-width: 576px){
+        &{
+            background-position: right center;
+        }
+    }
+
+    & .sa-description {
+        border: 5px solid #555555;
+        padding: 30px;
+        height: 470px;
+        overflow-y: scroll;
+        background: rgba(0,0,0,0.5);
+        backdrop-filter: blur( 2px );
+
+        @media only screen and (max-width: 576px){
+            &{
+                height: auto;
+            }
+        }
+
+        &::-webkit-scrollbar{
+            width: 2px;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            background-color: #00cef2;
+        }
+
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,YAAY,CAAC;EACT,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,6DAA6D;EAC/E,eAAe,EAAE,KAAK;EACtB,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,MAAM;CAO9B;;AALG,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;EAR5C,AASQ,YATI,CASF;IACE,MAAM,EAAE,IAAI;GACf",
+    "sources": [
+        "SeoServices.scss"
+    ],
+    "names": [],
+    "file": "SeoServices.css"
+}

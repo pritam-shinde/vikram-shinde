@@ -1,0 +1,29 @@
+#contact h1 {
+  font-size: 1.5rem;
+}
+
+#contact h2 {
+  font-size: 2rem;
+}
+
+#contact h3 {
+  font-size: 1.5rem;
+}
+
+#contact .MuiListItem-root {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#contact .MuiListItem-root .MuiBox-root {
+  cursor: pointer;
+}
+
+#contact .MuiListItem-root .MuiBox-root .MuiLink-root .MuiListItemIcon-root {
+  font-size: 1.5rem !important;
+  min-width: -webkit-fit-content !important;
+  min-width: -moz-fit-content !important;
+  min-width: fit-content !important;
+}
+/*# sourceMappingURL=Contact.css.map */

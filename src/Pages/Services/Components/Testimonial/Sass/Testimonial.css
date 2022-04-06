@@ -1,0 +1,30 @@
+#testimonialSec .comment {
+  color: #fff;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 0 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 576px) {
+  #testimonialSec .comment {
+    font-size: 1rem;
+  }
+}
+
+#testimonialSec .des {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+  #testimonialSec .des {
+    font-size: 0.9rem;
+  }
+}
+
+#testimonialSec .Designation {
+  color: #fff;
+}
+/*# sourceMappingURL=Testimonial.css.map */

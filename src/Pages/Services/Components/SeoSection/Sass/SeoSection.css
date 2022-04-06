@@ -1,0 +1,25 @@
+.seoSection {
+  height: 84vh;
+  width: 100%;
+  background-image: url("../../../../../Assets/Image/Background/seoSection.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .seoSection {
+    height: auto;
+    padding: 1.5rem 0 0 0;
+  }
+}
+
+.seoSection p {
+  font-size: 1rem;
+  color: #54595f;
+}
+
+.seoSection p strong {
+  color: #000;
+}
+/*# sourceMappingURL=SeoSection.css.map */

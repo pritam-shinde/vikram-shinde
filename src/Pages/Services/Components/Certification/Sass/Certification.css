@@ -1,0 +1,18 @@
+#certification .img-fluid {
+  max-width: 60% !important;
+}
+
+#certification .accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+}
+
+#certification .accordion .accordion-item .accordion-header .accordion-button.collapsed {
+  color: darkgray;
+}
+
+#certification .accordion .accordion-item .accordion-header .accordion-button:hover {
+  color: #00cef2;
+}
+/*# sourceMappingURL=Certification.css.map */

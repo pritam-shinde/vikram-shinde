@@ -1,0 +1,15 @@
+.seoServices {
+  height: 70vh;
+  width: 100%;
+  background-image: url("../../../../../Assets/Image/Background/seoServices.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .seoServices {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=SeoServices.css.map */
