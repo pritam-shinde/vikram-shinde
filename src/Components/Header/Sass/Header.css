@@ -18,4 +18,9 @@
     width: 60%;
   }
 }
+
+header nav .MuiButtonBase-root:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
 /*# sourceMappingURL=Header.css.map */

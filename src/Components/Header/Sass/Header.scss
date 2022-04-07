@@ -5,14 +5,18 @@
     box-sizing: border-box;
     transition: all 0.4s ease-in-out;
     font-family: 'Montserrat', sans-serif;
-  }
+}
 
-.collapse.navbar-collapse ul.navbar-nav{
+.collapse.navbar-collapse ul.navbar-nav {
     float: right;
 }
 
-@media only screen and(max-width:576px ){
-    .navbar-brand{
+@media only screen and(max-width:576px) {
+    .navbar-brand {
         width: 60%;
     }
+}
+
+header nav .MuiButtonBase-root:focus {
+    box-shadow: none !important;
 }

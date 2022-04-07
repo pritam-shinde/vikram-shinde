@@ -39,7 +39,7 @@ const Header = () => {
                                     </Link> : <div style={{ flexGrow: 1 }} />
                                 }
                                 <Button className="navbar-toggler border-0 outline-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    menu
+                                    <span className={scrollHeight > 50 ?'text-white' : "text-dark"}>menu</span>
                                 </Button>
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className="navbar-nav ms-auto">
