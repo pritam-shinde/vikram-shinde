@@ -1,6 +1,21 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.collapse.navbar-collapse ul.navbar-nav {
+  float: right;
+}
+
 @media only screen and (max-width: 576px) {
   .navbar-brand {
-    width: 76%;
+    width: 60%;
   }
 }
 /*# sourceMappingURL=Header.css.map */

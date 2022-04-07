@@ -1,13 +1,41 @@
-.hero {
-    height: 100vh;
-    width: 100%;
-    background-image: url('../../../Assets/Image/Background/home.jpg');
-    background-repeat: no-repeat !important;
-    background-size: cover;
-    background-position: center;
+ /* Reset */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     transition: all 0.4s ease-in-out;
+     font-family: 'Montserrat', sans-serif;
+ }
 
-    @media only screen and(max-width: 576px) {
-        background: url('../../../Assets/Image/Background/mobHomebg.jpg');
-        background-position: center c;
-    }
-}
+ .hero {
+     height: 100vh;
+     width: 100%;
+     background-image: url('../../../Assets/Image/Background/home.jpg');
+     background-repeat: no-repeat !important;
+     background-size: cover;
+     background-position: center top;
+
+     @media only screen and(max-width: 576px) {
+         & {
+             height: 100vh;
+             width: 100%;
+             background: url('../../../Assets/Image/Background/mobHomebg.jpg');
+             background-repeat: no-repeat !important;
+             background-size: cover;
+             background-position: center top;
+
+         }
+     }
+
+     @media only screen and(min-width: 577px) and(max-width: 992px) {
+         & {
+             height: 100vh;
+             width: 100%;
+             background: url('../../../Assets/Image/Background/tab.jpg');
+             background-repeat: no-repeat !important;
+             background-size: cover;
+             background-position: center top;
+
+         }
+     }
+ }

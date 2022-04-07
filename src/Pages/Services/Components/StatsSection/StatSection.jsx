@@ -18,15 +18,13 @@ const StatSection = () => {
                                             <Box>
                                                 <List>
                                                     {
-                                                        ["91% of adults use search engines to find information (they should find your site).", "SEO Checklist Blue Bullet Point Google dominates search with over 90% of the market (that’s roughly 5.8 billion searches a day)", "SEO Checklist Blue Bullet Point About 95% of searchers only look at the first page of Google (let’s help you get there).", "SEO Checklist Blue Bullet Point The top organic search result in Google gets clicked over 30% of the time.", "SEO Checklist Blue Bullet Point Moving up one position in the search results can increase click through rates by over 30%."].map(item => {
-                                                            return <>
-                                                                <ListItem>
+                                                        ["91% of adults use search engines to find information (they should find your site).", "SEO Checklist Blue Bullet Point Google dominates search with over 90% of the market (that’s roughly 5.8 billion searches a day)", "SEO Checklist Blue Bullet Point About 95% of searchers only look at the first page of Google (let’s help you get there).", "SEO Checklist Blue Bullet Point The top organic search result in Google gets clicked over 30% of the time.", "SEO Checklist Blue Bullet Point Moving up one position in the search results can increase click through rates by over 30%."].map((item, index) => {
+                                                            return <ListItem key={`stat-${index}`}>
                                                                     <ListItemIcon>
                                                                         <Check style={{ color: "#00ccff", }} />
                                                                     </ListItemIcon>
                                                                     <ListItemText primary={item} />
                                                                 </ListItem>
-                                                            </>
                                                         })
                                                     }
                                                 </List>

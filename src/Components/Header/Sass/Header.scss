@@ -1,5 +1,18 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.4s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.collapse.navbar-collapse ul.navbar-nav{
+    float: right;
+}
+
 @media only screen and(max-width:576px ){
     .navbar-brand{
-        width: 76%;
+        width: 60%;
     }
 }

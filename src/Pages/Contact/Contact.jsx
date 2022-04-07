@@ -4,18 +4,23 @@ import { BsSkype } from 'react-icons/bs';
 import { FaQuora } from 'react-icons/fa'
 import './Sass/Contact.css';
 import Data from './Data/Data';
+import Helmet from 'react-helmet';
 
 const Contact = () => {
 
 
   return (
     <>
+      <Helmet>
+        <title>Contact Me - Vikram Shinde</title>
+        <meta name="description" content="You can get in touch with me using the form below. Or you can drop me a message on any sicial network." />
+      </Helmet>
       <main>
         <Container maxWidth="xl" id="contact">
           <Box mt={15}>
             <Grid container spacing={3}>
               <Grid item xs={12} sm={12} md={10} lg={10} xl={10} className="mx-auto">
-              <Box py={2}>
+                <Box py={2}>
                   <Grid container spacing={5}>
                     <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
                       <h1 className='text-center'>Contact</h1>
@@ -23,12 +28,14 @@ const Contact = () => {
                       <Box>
                         <List>
                           {
-                            [{ id: "contact1", icon: <LocalPhone />, text: "9527833568" }, { id: "contact2", icon: <Mail />, text: "vikramshinde@gmail.com" }, { id: "contact3", icon: <PinDrop />, text: "Chinchbhavan, 97 Crown Society, Wardha Rd, opposite Bhawan's School, Nagpur, Maharashtra 440005" }].map(item => {
-                              return <ListItem>
-                                <ListItemIcon>
-                                  {item.icon}
-                                </ListItemIcon>
-                                <p>{item.text}</p>
+                            [{ id: "contact2", icon: <Mail />, text: "thevikramaa@gmail.com", link: "mailto:thevikramaa@gmail.com" },].map(item => {
+                              return <ListItem key={item.id}>
+                                <Link href={item.link}>
+                                  <ListItemIcon>
+                                    {item.icon}
+                                  </ListItemIcon>
+                                  <p className='text-dark' style={{display:"inline"}}>{item.text}</p>
+                                </Link>
                               </ListItem>
                             })
                           }
@@ -41,7 +48,7 @@ const Contact = () => {
                       <Box>
                         <List className='d-flex flex-wrap justify-content-center'>
                           {
-                            [{ id: "social-1", link: "/contact", icon: <BsSkype />, bgColor: "#00aff0" }, { id: "social-2", link: "https://www.linkedin.com/in/thevikramshinde/", icon: <LinkedIn />, bgColor: "#0077b5" }, { id: "social-3", link: "https://www.quora.com/profile/Vikram-689", icon: <FaQuora />, bgColor: "#b92b27" }, { id: "social-4", link: "https://www.facebook.com/VikramShinde28", icon: <Facebook />, bgColor: "#3b5998" }, { id: "social-5", link: "https://www.instagram.com/thevikramshinde/", icon: <Instagram />, bgColor: "#e1306c" }, { id: "social-6", link: "https://twitter.com/VikramShinde_", icon: <Twitter />, bgColor: "#1da1f2" }].map(item => {
+                            [{ id: "social-1", link: "skype:live:.cid.422aeafaf4b958e9?chat", icon: <BsSkype />, bgColor: "#00aff0" }, { id: "social-2", link: "https://www.linkedin.com/in/thevikramshinde/", icon: <LinkedIn />, bgColor: "#0077b5" }, { id: "social-3", link: "https://www.quora.com/profile/Vikram-689", icon: <FaQuora />, bgColor: "#b92b27" }, { id: "social-4", link: "https://www.facebook.com/VikramShinde28", icon: <Facebook />, bgColor: "#3b5998" }, { id: "social-5", link: "https://www.instagram.com/thevikramshinde/", icon: <Instagram />, bgColor: "#e1306c" }, { id: "social-6", link: "https://twitter.com/VikramShinde_", icon: <Twitter />, bgColor: "#1da1f2" }].map(item => {
                               return <ListItem key={item.id}>
                                 <Box p={2} className="rounded" style={{ backgroundColor: item.bgColor }}>
                                   <Link href={item.link} target="_blank">

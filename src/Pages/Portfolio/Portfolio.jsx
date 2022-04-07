@@ -2,11 +2,16 @@ import React from 'react'
 import { Container, Box, Typography, Grid } from '@material-ui/core';
 import './Sass/Portfolio.css';
 import Data from './Data/Data';
+import Helmet from 'react-helmet';
 
 
 const Portfolio = () => {
   return (
     <>
+    <Helmet>
+      <title>Vikram Shinde SEO Portfolio</title>
+      <meta name="description" content="Here is my work portfolio, Technical SEO and Keyword ranking, Onpage SEO & Backlinks" />
+    </Helmet>
       <main className='mt-5 pt-5' id="portfolio-page">
         <section>
           <Container maxWidth="xl" >

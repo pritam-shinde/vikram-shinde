@@ -11,7 +11,7 @@ const SeoSection = () => {
                         <Grid item xs={12} sm={12} md={11} lg={10} xl={10} className="mx-auto" style={{ height: "inherit" }}>
                             <Box style={{ height: "inherit" }}>
                                 <Grid container style={{ height: "inherit" }}>
-                                    <Grid item xs={12} sm={12} md={8} lg={8} xl={7} style={{ height: "inherit" }} className="d-flex flex-column justify-content-center">
+                                    <Grid item xs={12} sm={8} md={8} lg={8} xl={7} style={{ height: "inherit" }} className="d-flex flex-column justify-content-center">
                                         <p><strong>SEO is a long-game.</strong> Some people are put off by that. But the fact is, all marketing is a long-game. Social media is a long game. You have to keep that marketing wheel spinning otherwise the flow of new business dries up.</p>
                                         <p>But the thing with SEO is it requires a lot less wheel spinning than, say, social media. Instead of a relentless content publishing schedule (that can often feel like you’re shouting into the void), with SEO you’re turning your website into a more profitable money-making asset.</p>
                                         <p>You’re building domain authority that can’t be easily taken from you.</p>
