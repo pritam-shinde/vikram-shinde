@@ -7,9 +7,11 @@ import './Sass/Header.css'
 const useStyles = makeStyles(theme => ({
     brandImageDesktop: { width: "75%", height: "auto" },
     brandImageMobile: { width: "70%", height: "auto" },
-    bgDark: {backgroundColor: "#000000c4 !important"},
-    bgTransparent:{backgroundColor:"transparent"},
-    txtWhite:{color: "#fff !important"}
+    bgDark: { backgroundColor: "#000 !important" },
+    bgTransparent: { backgroundColor: "transparent" },
+    txtWhite: { color: "#fff !important" },
+    DeskMenu: { marginLeft: "auto !important" },
+    mobMenu: { marginLeft: "auto !important", marginRight: "auto !important" }
 }))
 
 const Header = () => {
@@ -25,33 +27,41 @@ const Header = () => {
         setScrollHeight(window.scrollY)
     })
 
+    let navLinks = document.querySelectorAll('.nav-link');
+    Object.keys(navLinks).map(item => {
+        navLinks[item].addEventListener('click', () => {
+            document.querySelector('.navbar-toggler').classList.remove('collapsed');
+            document.querySelector('.navbar-collapse.collapse').classList.remove('show');
+        })
+    })
+
     const classes = useStyles()
     return (
         <>
-            <header className={`fixed-top ${location.pathname === "/contact/" ? classes.bgDark : location.pathname === "/portfolio/" ? classes.bgDark : null}`} style={{ backgroundColor: (scrollHeight > 50) ?  "#000000c4" : "transparent" }}>
+            <header className={`fixed-top ${location.pathname === "/contact/" ? classes.bgDark : location.pathname === "/portfolio/" ? classes.bgDark : null}`} style={{ backgroundColor: (scrollHeight > 50) ? "#000" : "transparent" }}>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-10 col-12 mx-auto">
                             <nav className={`navbar navbar-expand-lg bg-transparent px-1 navbar-light`}>
                                 {
-                                    location.pathname !== "/" ? <Link className='navbar-brand' to="/">
-                                        <img src={Logo} alt="logo" className={width < 576 ? classes.brandImageMobile : classes.brandImageDesktop} />
+                                    location.pathname !== "/" ? <Link className='navbar-brand' title='Home' to="/">
+                                        <img src={Logo} alt="Vikramaa Logo" title='Vikramaa Logo' className={width < 576 ? classes.brandImageMobile : classes.brandImageDesktop} />
                                     </Link> : <div style={{ flexGrow: 1 }} />
                                 }
-                                <Button className="navbar-toggler border-0 outline-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span className={scrollHeight > 50 ?'text-white' : "text-dark"}>menu</span>
+                                <Button className="navbar-toggler border-0 outline-0 text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span className={`fas fa-bars ${location.pathname === "/" ? "text-dark" : "text-white"}`}></span>
                                 </Button>
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul className="navbar-nav ms-auto">
-                                        <li className="nav-item"><Link style={{color: scrollHeight > 50 ? "#fff" : "#000" }} to="/" className={`nav-link ${location.pathname === "/contact/" ? classes.txtWhite : null} ${location.pathname === "/portfolio/" ? classes.txtWhite : null}`}>Home</Link></li>
-                                        <li className="nav-item"><Link style={{color: scrollHeight > 50 ? "#fff" : "#000" }} to="/services/" className={`nav-link ${location.pathname === "/contact/" ? classes.txtWhite : null} ${location.pathname === "/portfolio/" ? classes.txtWhite : null}`}>Service</Link></li>
-                                        <li className="nav-item"><Link style={{color: scrollHeight > 50 ? "#fff" : "#000" }} to="/portfolio/" className={`nav-link ${location.pathname === "/contact/" ? classes.txtWhite : null} ${location.pathname === "/portfolio/" ? classes.txtWhite : null}`}>Portfolio</Link></li>
-                                        <li className="nav-item"><Link style={{color: scrollHeight > 50 ? "#fff" : "#000" }} to="/contact/" className={`nav-link ${location.pathname === "/contact/" ? classes.txtWhite : null} ${location.pathname === "/portfolio/" ? classes.txtWhite : null}`}>Contact</Link></li>
+                                    <ul className={`navbar-nav ml-auto align-items-end`} style={{ marginLeft: "auto !important" }}>
+                                        <li className="nav-item"><Link title='Home' style={{ color: scrollHeight > 50 ? "#fff" : "#000" }} to="/" className={`nav-link ${location.pathname === "/" ? "text-dark" : "text-white"}`}>Home</Link></li>
+                                        <li className="nav-item"><Link title="services" style={{ color: scrollHeight > 50 ? "#fff" : "#000" }} to="/services/" className={`nav-link ${location.pathname === "/" ? "text-dark" : "text-white"}`}>Service</Link></li>
+                                        <li className="nav-item"><Link title="Portfolio" style={{ color: scrollHeight > 50 ? "#fff" : "#000" }} to="/portfolio/" className={`nav-link ${location.pathname === "/" ? "text-dark" : "text-white"}`}>Portfolio</Link></li>
+                                        <li className="nav-item"><Link title='contact' style={{ color: scrollHeight > 50 ? "#fff" : "#000" }} to="/contact/" className={`nav-link ${location.pathname === "/" ? "text-dark" : "text-white"}`}>Contact</Link></li>
                                     </ul>
                                 </div>
                             </nav>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </header>
         </>

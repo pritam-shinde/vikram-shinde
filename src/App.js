@@ -5,6 +5,23 @@ import { Header, Footer } from './Components/Components';
 
 const App = () => {
   const location = useLocation()
+
+  window.myInfo=()=>{
+    let myInfo = {
+      frontend:{
+        Name:"Aditya Nitin Burse (Jain)",
+        Designation:"Front-End Developer",
+        Employer:"Nonstop Corporation"
+      },
+      backend:{
+        Name:"Ankit Shahu",
+        Designation:"Back-End Developer",
+        Employer:"Nonstop Corporation"
+      }
+    }
+    console.log(`Developed By ${JSON.stringify(myInfo)}`)
+  }
+
   return (
     <>
       <Header />
@@ -13,7 +30,6 @@ const App = () => {
         <Route path="/portfolio/" element={<Portfolio />} />
         <Route path='/services/' element={<Services />} />
         <Route path="/contact/" element={<Contact />} />
-        <Route path='*' element={<Error />} />
       </Routes>
       {
         location.pathname !== "/" ? <Footer /> : null

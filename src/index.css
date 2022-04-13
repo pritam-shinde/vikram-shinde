@@ -25,3 +25,7 @@ body {
 #factSec .carousel.carousel-slider{
   margin: 1rem auto;
 }
+
+.ms-auto{
+  margin-left: auto !important;
+}

@@ -29,7 +29,7 @@ const Portfolio = () => {
                           <Box className='text-center'>
                             {
                               item.images.map(item => {
-                                return <img key={item.id} src={item.image} alt={item.alt} className="img-fluid mb-3" />
+                                return <img key={item.id} src={item.image} alt={item.alt} title={item.alt} className="img-fluid mb-3" />
                               })
                             }
                           </Box>

@@ -23,14 +23,14 @@ const Contact = () => {
                 <Box py={2}>
                   <Grid container spacing={5}>
                     <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-                      <h1 className='text-center'>Contact</h1>
+                      <h1 className='text-left'>Contact</h1>
                       <Divider />
                       <Box>
                         <List>
                           {
                             [{ id: "contact2", icon: <Mail />, text: "thevikramaa@gmail.com", link: "mailto:thevikramaa@gmail.com" },].map(item => {
                               return <ListItem key={item.id}>
-                                <Link href={item.link}>
+                                <Link href={item.link} title="Gmail">
                                   <ListItemIcon>
                                     {item.icon}
                                   </ListItemIcon>
@@ -41,17 +41,13 @@ const Contact = () => {
                           }
                         </List>
                       </Box>
-                    </Grid>
-                    <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-                      <h3 className='text-center'>Follow Us</h3>
-                      <Divider />
                       <Box>
-                        <List className='d-flex flex-wrap justify-content-center'>
+                        <List className='d-flex flex-wrap justify-content-start'>
                           {
-                            [{ id: "social-1", link: "skype:live:.cid.422aeafaf4b958e9?chat", icon: <BsSkype />, bgColor: "#00aff0" }, { id: "social-2", link: "https://www.linkedin.com/in/thevikramshinde/", icon: <LinkedIn />, bgColor: "#0077b5" }, { id: "social-3", link: "https://www.quora.com/profile/Vikram-689", icon: <FaQuora />, bgColor: "#b92b27" }, { id: "social-4", link: "https://www.facebook.com/VikramShinde28", icon: <Facebook />, bgColor: "#3b5998" }, { id: "social-5", link: "https://www.instagram.com/thevikramshinde/", icon: <Instagram />, bgColor: "#e1306c" }, { id: "social-6", link: "https://twitter.com/VikramShinde_", icon: <Twitter />, bgColor: "#1da1f2" }].map(item => {
+                            [{ id: "social-1", title:"Skype", link: "skype:live:.cid.422aeafaf4b958e9?chat", icon: <BsSkype />, bgColor: "#00aff0" }, { id: "social-2", title:"Linkdin", link: "https://www.linkedin.com/in/thevikramshinde/", icon: <LinkedIn />, bgColor: "#0077b5" }, { id: "social-3", title:"Quora", link: "https://www.quora.com/profile/Vikram-689", icon: <FaQuora />, bgColor: "#b92b27" }, { id: "social-4", title:"Facebook", link: "https://www.facebook.com/VikramShinde28", icon: <Facebook />, bgColor: "#3b5998" }, { id: "social-5", title:"Instagram", link: "https://www.instagram.com/thevikramshinde/", icon: <Instagram />, bgColor: "#e1306c" }, { id: "social-6", title:"Twitter", link: "https://twitter.com/VikramShinde_", icon: <Twitter />, bgColor: "#1da1f2" }].map(item => {
                               return <ListItem key={item.id}>
                                 <Box p={2} className="rounded" style={{ backgroundColor: item.bgColor }}>
-                                  <Link href={item.link} target="_blank">
+                                  <Link href={item.link} target="_blank" title={item.title}>
                                     <ListItemIcon className='text-white'>
                                       {item.icon}
                                     </ListItemIcon>
