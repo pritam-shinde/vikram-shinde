@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, SeoSection, SeoServices, StatSection, FactSlider, ExperienceSec, Testimonial, Certification, SeoServiceSilder, SubmitGoogle } from './Components/Components';
+import { Hero, SeoSection, SeoServices, StatSection, FactSlider, ExperienceSec, Testimonial, Certification, SeoServiceSilder, SubmitGoogle, PreFooter } from './Components/Components';
 import Helmet from 'react-helmet'
 
 const Services = () => {
@@ -48,6 +48,9 @@ const Services = () => {
         </section>
         <section>
           <SubmitGoogle />
+        </section>
+        <section>
+          <PreFooter />
         </section>
       </main>
     </>

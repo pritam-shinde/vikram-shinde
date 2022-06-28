@@ -9,3 +9,4 @@ export {default as Testimonial} from './Testimonial/Testimonial';
 export {default as Certification} from './Certification/Certification';
 export {default as SeoServiceSilder} from './SeoServiceSilder/SeoServiceSilder';
 export {default as SubmitGoogle} from './SubmitGoogle/SubmitGoogle'
+export {default as PreFooter} from './PreFooter/PreFooter';

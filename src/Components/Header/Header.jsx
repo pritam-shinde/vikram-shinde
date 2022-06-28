@@ -32,13 +32,14 @@ const Header = () => {
         navLinks[item].addEventListener('click', () => {
             document.querySelector('.navbar-toggler').classList.remove('collapsed');
             document.querySelector('.navbar-collapse.collapse').classList.remove('show');
+            window.scrollTo(0,0)
         })
     })
 
     const classes = useStyles()
     return (
         <>
-            <header className={`fixed-top ${location.pathname === "/contact/" ? classes.bgDark : location.pathname === "/portfolio/" ? classes.bgDark : null}`} style={{ backgroundColor: (scrollHeight > 50) ? "#000" : "transparent" }}>
+            <header className={`fixed-top ${location.pathname === "/about/" ? classes.bgDark : location.pathname === "/portfolio/" ? classes.bgDark : null}`} style={{ backgroundColor: (scrollHeight > 50) ? "#000" : "transparent" }}>
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-10 col-12 mx-auto">
@@ -54,9 +55,9 @@ const Header = () => {
                                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul className={`navbar-nav ml-auto align-items-end`} style={{ marginLeft: "auto !important" }}>
                                         <li className="nav-item"><Link title='Home' style={{ color: scrollHeight > 50 ? "#fff" : "#000" }} to="/" className={`nav-link ${location.pathname === "/" ? "text-dark" : "text-white"}`}>Home</Link></li>
-                                        <li className="nav-item"><Link title="services" style={{ color: scrollHeight > 50 ? "#fff" : "#000" }} to="/services/" className={`nav-link ${location.pathname === "/" ? "text-dark" : "text-white"}`}>Service</Link></li>
+                                        <li className="nav-item"><Link title="Website Optimization" style={{ color: scrollHeight > 50 ? "#fff" : "#000" }} to="/website-optimization/" className={`nav-link ${location.pathname === "/" ? "text-dark" : "text-white"}`}>Website Optimization</Link></li>
                                         <li className="nav-item"><Link title="Portfolio" style={{ color: scrollHeight > 50 ? "#fff" : "#000" }} to="/portfolio/" className={`nav-link ${location.pathname === "/" ? "text-dark" : "text-white"}`}>Portfolio</Link></li>
-                                        <li className="nav-item"><Link title='contact' style={{ color: scrollHeight > 50 ? "#fff" : "#000" }} to="/contact/" className={`nav-link ${location.pathname === "/" ? "text-dark" : "text-white"}`}>Contact</Link></li>
+                                        <li className="nav-item"><Link title='About' style={{ color: scrollHeight > 50 ? "#fff" : "#000" }} to="/about/" className={`nav-link ${location.pathname === "/" ? "text-dark" : "text-white"}`}>About</Link></li>
                                     </ul>
                                 </div>
                             </nav>

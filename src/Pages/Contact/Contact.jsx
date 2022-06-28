@@ -26,22 +26,6 @@ const Contact = () => {
                       <h1 className='text-left'>Contact</h1>
                       <Divider />
                       <Box>
-                        <List>
-                          {
-                            [{ id: "contact2", icon: <Mail />, text: "thevikramaa@gmail.com", link: "mailto:thevikramaa@gmail.com" },].map(item => {
-                              return <ListItem key={item.id}>
-                                <Link href={item.link} title="Gmail">
-                                  <ListItemIcon>
-                                    {item.icon}
-                                  </ListItemIcon>
-                                  <p className='text-dark' style={{display:"inline"}}>{item.text}</p>
-                                </Link>
-                              </ListItem>
-                            })
-                          }
-                        </List>
-                      </Box>
-                      <Box>
                         <List className='d-flex flex-wrap justify-content-start'>
                           {
                             [{ id: "social-1", title:"Skype", link: "skype:live:.cid.422aeafaf4b958e9?chat", icon: <BsSkype />, bgColor: "#00aff0" }, { id: "social-2", title:"Linkdin", link: "https://www.linkedin.com/in/thevikramshinde/", icon: <LinkedIn />, bgColor: "#0077b5" }, { id: "social-3", title:"Quora", link: "https://www.quora.com/profile/Vikram-689", icon: <FaQuora />, bgColor: "#b92b27" }, { id: "social-4", title:"Facebook", link: "https://www.facebook.com/VikramShinde28", icon: <Facebook />, bgColor: "#3b5998" }, { id: "social-5", title:"Instagram", link: "https://www.instagram.com/thevikramshinde/", icon: <Instagram />, bgColor: "#e1306c" }, { id: "social-6", title:"Twitter", link: "https://twitter.com/VikramShinde_", icon: <Twitter />, bgColor: "#1da1f2" }].map(item => {
